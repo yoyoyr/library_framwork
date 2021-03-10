@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="common_confirm">确定</string>
+    <string name="common_save">保存</string>
+
+    <string name="common_message_center">消息中心</string>
+    <string name="common_my_favorites">我的收藏</string>
+    <string name="common_permission_help">权限修复</string>
+    <string name="common_help_and_feedback">帮助与反馈</string>
+    <string name="common_question_and_feedback">问题反馈</string>
+    <string name="common_about_us">关于我们</string>
+    <string name="common_setting">设置</string>
+    <string name="common_privacy_policy">隐私协议</string>
+    <string name="common_loading">加载中&#8230;</string>
+    <string name="common_sign_out">退出登录</string>
+    <string name="footer_loading">加载中</string>
+    <string name="footer_end">~没有更多数据了~</string>
+    <string name="footer_retry">点击重试</string>
+    <!-- APK 升级 -->
+    <string name="apk_update_tips_title">正在更新</string>
+    <string name="apk_update_tips_error_title">更新出现错误</string>
+
+    <string name="apk_update_downloading_progress">下载进度 </string>
+    <string name="apk_update_download_failed">下载失败，请稍后再重试</string>
+
+    <!-- 升级更新 -->
+    <string name="download_cancel">取消下载</string>
+    <string name="download_success">下载完成,点击更新 [100%]</string>
+
+    <string name="download_failure_storage_permission_deny">下载更新App失败，无储存权限</string>
+    <string name="download_failure_net_deny">下载更新App失败，无法访问服务</string>
+    <string name="download_failure_file_not_found">下载更新App失败，要更新的App不存在</string>
+    <string name="frame_cancel">取消</string>
+    <string name="frame_ok">确定</string>
+    <string name="frame_auto">周期自动重置</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SettingItemView">
+        <attr name="title" format="string|reference" />
+        <attr name="desc" format="string|reference" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightIconWidth" format="dimension"/>
+        <attr name="rightIconHeight" format="dimension"/>
+        <attr name="titleStartDrawable" format="reference" />
+        <attr name="showArrow" format="boolean" />
+        <attr name="showBadge" format="boolean" />
+        <attr name="showBottomDivider" format="boolean"/>
+        <attr name="showSwitch" format="boolean"/>
+        <attr name="switchCheck" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SimpleCardView">
+        <attr name="cardBackgroundColor" format="color" />
+        <attr name="cardCornerRadius" format="dimension" />
+        <attr name="cardElevation" format="dimension" />
+        <attr name="cardElevationStartColor" format="color" />
+        <attr name="cardElevationEndColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="offColor" format="color"/>
+        <attr name="offColorDark" format="color"/>
+        <attr name="barColor" format="color"/>
+        <attr name="bgColor" format="color"/>
+        <attr name="shadowColor" format="color"/>
+        <attr name="ratioAspect" format="float"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+
+
+
+</resources>

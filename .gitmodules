@@ -1,0 +1,3 @@
+[submodule "NEDToast-Android"]
+	path = NEDToast-Android
+	url = http://gitlab.miguan.com/mobile-platform/NEDToast-Android.git

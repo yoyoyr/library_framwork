@@ -1,0 +1,7 @@
+include ':library_framework'
+include ':app'
+
+rootProject.name = "FrameworkDemo"
+
+include(':Library_network')
+project(':Library_network').projectDir = new File('../TDENetworking/Library_network')

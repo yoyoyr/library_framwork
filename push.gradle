@@ -1,0 +1,58 @@
+//apply plugin: 'maven'
+//
+//
+//task androidSourcesJar(type: Jar) {
+//    classifier = 'sources'
+//    from android.sourceSets.main.java.srcDirs
+//}
+//
+//artifacts {
+//    archives androidSourcesJar
+//}
+//
+//
+//def isDevBuild() {
+//    return VERSION_NAME.toUpperCase().contains("DEV")
+//}
+//
+//def getRepositoryUsername() {
+//    return hasProperty('NEXUS_USERNAME') ? NEXUS_USERNAME : ""
+//}
+//
+//def getRepositoryPassword() {
+//    return hasProperty('NEXUS_PASSWORD') ? NEXUS_PASSWORD : ""
+//}
+//
+//def localMavenRepo = 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
+//
+//afterEvaluate { project ->
+//    uploadArchives {
+//        repositories {
+//            mavenDeployer {
+//                pom.groupId = GROUP
+//                pom.artifactId = POM_ARTIFACT_ID
+//                pom.version = VERSION_NAME
+//                pom.packaging = "aar"
+//                if (isDevBuild()) {
+//                    repository(url: localMavenRepo)
+//                    snapshotRepository(url: localMavenRepo)
+//                } else {
+//                    repository(url: RELEASE_REPOSITORY_URL) {
+//                        authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+//                    }
+//                    snapshotRepository(url: SNAPSHOT_REPOSITORY_URL) {
+//                        authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+//                    }
+//                }
+//                pom.whenConfigured { pom ->
+//                    pom.dependencies.forEach { dep ->
+//                        if (dep.getVersion() == "unspecified") {
+//                            dep.setGroupId(GROUP)
+//                            dep.setVersion(VERSION_NAME)
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
